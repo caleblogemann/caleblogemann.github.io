@@ -1,0 +1,287 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Caleb} % Your first name
+\familyname{Logemann} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vit\ae{}}
+\address{396 Carver Hall, 411 Morrill Road}{Ames, IA 50011}
+%\mobile{(000) 111 1111}
+\phone{(515) 494 7256}
+%\fax{(000) 111 1113}
+\email{logemann@iastate.edu}
+\homepage{caleblogemann.github.io}{caleblogemann.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   COVER LETTER
+%----------------------------------------------------------------------------------------
+  % To remove the cover letter, comment out this entire block
+
+  %\clearpage
+
+  %\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+  %\date{\today} % Letter date
+  %\opening{Dear Sir or Madam,} % Opening greeting
+  %\closing{Sincerely yours,} % Closing phrase
+  %\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+  %\makelettertitle % Print letter title
+
+  %\lipsum[1-2] % Dummy text
+  %\lipsum[4] % Dummy text
+
+  %\makeletterclosing % Print letter signature
+
+  %\newpage
+%----------------------------------------------------------------------------------------
+%   CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+  \cventry{2015--Present}{Masters/Ph.D.}{Iowa State University}{Applied Mathematics}{GPA --- 3.88}{Graduate Minor: Aerospace Engineering}
+  \cventry{2011--2015}{Bachelor of Arts}{Bethel University}{GPA --- 3.96}{ Majors --- Mathematics, Physics, Computer Science}{Honors Program}
+
+\section{Research}
+\cventry{2016--Present}{Computational Mathematics}{Dr.\ James Rossmanith}{Iowa State University}{}{
+  \begin{itemize}
+    \item Developed new stable and high order numerical methods for solving thin film equations.
+      Detailed acheivements:
+      \begin{itemize}
+        \item Adapted the Local Discontinuous Galerkin method to solve the thin film equation.
+        \item Developed C++ software to compute said methods in \textsc{DogPack} software package
+        \item Used preconditioners and the geometric multigrid method to accelerate solver
+        % TODO: Add statement about Picard iteration
+      \end{itemize}
+    \item Developing high-order discontinuous Galerkin methods for the shallow water equations on the sphere with an icosahedral mesh.
+      Pursuing method for generalized shallow water equations with vertical structure.
+  \end{itemize}
+}
+
+\cventry{Summer 2019}{Computational Fluid Mechanics}{Dr.\ Travis Fisher}{\textsc{Sandia National Labs}}{Albuquerque, NM}{
+  Explored Error Transport techniques using Defect Correction method for Hyperbolic
+  Conservation Laws.
+  Detailed achievements:
+  \begin{itemize}
+    \item Developed model for the truncation error
+    \item Used Summation By Parts (SBP) Finite Difference Operators
+    \item Presented work in oral and written report
+  \end{itemize}
+}
+
+\cventry{2015}{Mathematical Neuroscience}{Dr.\ Brian Turnquist}{Bethel University}{}{
+  Researched the developement of new mathematical techniques for quantifying and
+  classifying neural data.
+  Developed efficient algorithms for computing said mathematical techniques.
+  Detailed acheivements:
+  \begin{itemize}
+    \item Created novel use of silhouette statistic to differentiate neural
+      responses to itch and pain.
+    \item Developed efficient algorithms for computing said statistic by
+      incorporating genetic algorithms.
+  \end{itemize}
+}
+
+\cventry{2014}{NanoOptics}{Dr.\ Nathan Lindquist}{Bethel University}{}{
+  Researched the creation of a scattering based optical trap for the control of
+  mirco particles.
+  \newline{}
+  Detailed achievements:
+  \begin{itemize}
+    \item Developed LabView software to control and monitor the focus of the
+      laser.
+    \item Measured the strength of the trap.
+    \item Optimized the strength of the trap.
+  \end{itemize}
+}
+
+\cventry{2013}{Atomic and Molecular Optics}{Dr.\ Chad Hoyt}{Bethel University}{}{
+  Individually researched the developement of a cheap and portable iodine spectroscopy setup
+  which could be used as locked absolute reference in the frequency space.
+  Also collaborated with group working on trapping cold lithium in magneto-optical trap.
+  \newline{}
+  Detailed achievements:
+  \begin{itemize}
+    \item Built and fine-tuned a enclosed cavity diode laser.
+    \item Calibrated apparatus to acheive maximum interaction between the laser
+      and the iodine.
+    \item Built and tested circuitry for the precise measurement of the temperature of lithium.
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+\cventry{2015--Present}{Graduate Teaching Assistent}{\textsc{Iowa State University}}{
+  Ames, IA}{}{Taught undergraduate recitations in mathematics.
+  \newline{}
+  Detailed achievements:
+  \begin{itemize}
+    \item Worked closely with professors to develop class materials.
+    \item Taught one hour lectures in Calculus and Differential Equation to
+      smaller sections of students.
+    \item Guided students through a team based learning (TBL) approach to Precalculus.
+  \end{itemize}
+}
+
+\cventry{Summer 2017}{Graduate Mentor of Undergraduate Research}{\textsc{Iowa State University}}{
+  Ames, IA}{}{Lead and mentored group of four undergraduate students in computational
+  research
+  \newline{}
+  Detailed achievements:
+  \begin{itemize}
+    \item Advised students in research techniques
+    \item Explored Space-Time/Lax-Wendroff Discontinuous Galerkin Method
+    \item Developed positivity preserving limiters and oscillation limiters
+  \end{itemize}
+}
+
+\cventry{2014--2015}{Intern Software Developer}{\textsc{Relationship One}}{
+  Minneapolis, MN}{}{Developed Java based sofware in an agile software developement environment.
+  \newline{}
+  Detailed achievements:
+  \begin{itemize}
+    \item Created Java applications to assist companies in managing their costumer data.
+    \item Used advanced Javascript and HTML for the continued developement of company website.
+    \item Integrated web application with a SQL Database through a Node.js server.
+  \end{itemize}
+}
+
+\section{Projects}
+\cventry{2016--Present}{DoGPack Developer}{Iowa State University}{}{}{
+  Developed additions to C++ package for solving Hyperbolic Conservation Laws
+  with Discontinuous Galerkin Method.
+  Detailed Achievements:
+  \begin{itemize}
+    \item Utilized design patterns to limit code reuse
+    \item Added unit testing framework
+    \item Experienced with version control systems
+  \end{itemize}
+}
+
+\cventry{2016}{MATH 610 Early Graduate Research}{Iowa State University}{}{}{
+  Expanded on Stochastic Galerkin Method for Hamilton-Jacobi Equations.
+  Detailed Achievements:
+  \begin{itemize}
+    \item Uncertainty Quantification through Stochastic expansion of Galerkin Method
+    \item Utilized Runge Kutta IMEX time stepping scheme
+    \item Implemented method in MATLAB
+  \end{itemize}
+}
+
+% Add project about reinforcement learning
+
+\section{Leadership Experience}
+\cventry{2017--2019}{President, SIAM, Iowa State Chapter}{}{}{}{
+  Student President of the Iowa State Chapter of the Society for Industrial and
+  Applied Mathematics.
+  Detailed Achievements:
+  \begin{itemize}
+    \item Lead seminar for graduate students interested in Applied Math
+    \item Organized student trips to SIAM Central States Sectional Meetings
+    \item Advised younger graduate students
+  \end{itemize}
+}
+
+\section{Publications}
+\cventry{2018}{C. Felton, M. Harris, C. Logemann, S. Nelson, I. Pelakh, and
+  J. Rossmanith}{A Positivity-Preserving Limiting Strategy for Locally-Implicit
+  Lax-Wendroff Discontinuous Galerkin Methods}{Advances in Computational
+  Mathematics, Submitted, (arXiv: 1806.06756)}{}{}
+\cventry{2019}{C. Logemann and J. Rossmanith}{An Implicit-Explicit Discontinuous
+  Galerkin Scheme using a Newton-Free Picard Iteration for a Thin-Film Model}{In
+  Preparation}{}{}
+\cventry{2019}{C. Logemann and J. Rossmanith}{A Discontinuous Galerkin Method
+  for Generalized Shallow Water Equations on the Sphere}{In Preparation}{}{}
+
+
+\section{Invited and Contributed Talks}
+\cvitem{2019}{SIAM Central States Section Meeting, \textit{An Implicit-Explicit Discontinuous Galerkin Scheme using a Newton-Free Picard Iteration for a Thin-Film Model}}
+\cvitem{2019}{ISU Chapter of SIAM Seminar, \textit{Error Transport using the Defect Correction Equations with Summation By Parts Operators}}
+\cvitem{2019}{SIAM Conference on Computational Science and Engineering, \textit{High Order Discontinuous Galerkin Scheme for Thin-Film Equations}}
+\cvitem{2019}{Midwest Numerical Analysis Days, \textit{High Order Discontinuous Galerkin Scheme for Thin-Film Equations}}
+\cvitem{2018}{Graduate Student Seminar at Iowa State University. \textit{Overview of Discontinuous Galerkin Methods}}
+\cvitem{2017}{SIAM Central States Section Meeting, \textit{Local Discontinuous Galerkin Method for Thin-Film Equations}}
+
+
+\section{Conferences Attended}
+\cvitem{2016, 2018}{SIAM Central States Section Meeting}
+\cvitem{2017, 2018}{Midwest Numerical Analysis Days}
+
+\section{Computational and Applied Math Coursework}
+\cvitem{}{MATH 561, 562 --- Numerical Analysis and Numerical Linear Algebra}
+\cvitem{}{MATH 517, 666, 667 --- Finite Difference Methods, Finite Volume Methods, Finite Element Methods}
+\cvitem{}{MATH 565, 566 --- Continuous and Discrete Optimization}
+\cvitem{}{MATH 519, 520 --- Applied Analysis I and II}
+\cvitem{}{AERE E 510, 546 --- Fluid Mechanics and Continuum Mechanics}
+\cvitem{}{AERE E 504X --- Reinforcement Learning}
+\cvitem{}{MATH 680 --- Regularity of Elliptic PDEs}
+
+\section{Awards}
+\cvitem{2019}{AMS Travel Grand --- JMM 2020}
+\cvitem{2018}{SIAM Student Travel Award --- SIAM CSE 2019}
+\cvitem{2012}{Richard Peterson Scholarship in Physics Recipient}
+\cvitem{2013--2015}{Pamela Olson Math/Physics Scholarship Recipient}
+% \cvitem{2013--2014}{Greuz Physics Scholarship Recipient}
+\cvitem{2014--2015}{Anderson Math/Physics Scholarship Recipient}
+
+% \section{ExtraCurricular Activities}
+
+% \cvitem{2017--Present}{President, SIAM, Iowa State Chapter}
+% \cvitem{2016--2017}{Communications Officer, SIAM, Iowa State Chapter}
+% \cvitem{2015--Present}{Member - American Mathematical Society}
+% \cvitem{2012--2015}{Member - Sigma Pi Sigma Honor Society}
+
+\end{document}
